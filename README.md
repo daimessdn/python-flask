@@ -16,6 +16,7 @@ touch app.py
 ```
 
 ## 3. Creating `app.py`
+
 ```python
 from flask import Flask
 
@@ -31,6 +32,17 @@ if (__name__ == "__main__"):
 ```
 
 ## 4. Running Flask Server
+
 ```bash
 python app.py
+```
+
+or
+
+```bash
+export FLASK_APP=app.py
+export FLASK_ENV=development # deprecated
+export FLASK_DEBUG=1         # debug = True
+
+flask run
 ```
