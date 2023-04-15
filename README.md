@@ -46,3 +46,28 @@ export FLASK_DEBUG=1         # debug = True
 
 flask run
 ```
+
+-------------------------
+
+## Working with HTML files
+
+- Create HTML file  inside `templates` directory (let say `index.html`)
+
+- Import `render_template` from flask library
+  
+  ```python
+  from flask import render_template
+  ```
+
+- Update one of return views route (let say in `@app.route("/")`
+  
+  - From `return "Hello, world!"`
+  
+  - Into `return render_template("index.html")`
+  
+  ```python
+  # main route
+  @app.route("/")
+  def index():
+      return render_template("index.html")
+  ```
