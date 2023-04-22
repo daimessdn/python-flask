@@ -71,3 +71,9 @@ flask run
   def index():
       return render_template("index.html")
   ```
+
+  ----------------------------
+
+  ## Working with Static Files
+
+  In HTML files, we can use `"{{ url_for('static', filename='js/app.js') }}"` (for example for JS) to apply static files in `static` directory we made in `app` directory. We can apply this terms for images, CSS, and other files.
